@@ -1,0 +1,65 @@
+body{
+	padding-left: 3%;
+}
+
+img{
+	width: 100%;
+	display: block;
+	margin-bottom: 1%;
+    margin-top: 5%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 1px white;
+}
+
+td{
+	padding: 20px;
+	text-align:center;
+	text-transform: capitalize;
+}
+
+header{	
+	margin-left: 5%;
+	font-size: 23px;
+	text-transform: uppercase;
+	border-bottom: 1px #f1f1f1 solid;
+	width: 30%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+img:hover{
+	border-radius: 0;
+	box-shadow: 0px 0px 8px 3px black;	
+}
+
+.item{
+	width: 19%;
+	display: inline-block;
+	text-align: center;
+	margin-left: 2.5%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a{
+	color:black;
+}
+
+#info{
+    color: black;
+}
+
+#home{
+    color:white;
+}
+
+.form-control{
+	margin-right:33px;
+}

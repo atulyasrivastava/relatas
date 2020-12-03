@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+
+<header>
+	<p id="heading">List/User</p>
+	<p id="searchbar">
+		<form action="/users" method="GET" class="form-inline">
+			<div class="form-group">
+				<input type="text" name="search" placeholder="Enter Username" class="form-control">
+				<input type="submit" value="search" class="btn btn-default">
+			</div>
+		</form>
+	</p>
+
+</header>
+
+	<div class="container">
+	<% users.forEach(function(user){ %>
+
+		<div class="item">
+			<img src="<%= user.avatar_url %>" width=250px>
+			<a href="/users/<%= user._id %>" style="font-size:1.5vw"><%= user.login %></a>
+		</div>
+		
+		<% }) %>
+	</div>
+
+<%- include("partials/footer.ejs") %>
+

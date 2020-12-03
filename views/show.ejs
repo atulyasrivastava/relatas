@@ -1,0 +1,22 @@
+<%- include("partials/show_header") %>
+
+<div class="container">
+    <span class="detail">
+        <h3 style="border-bottom: 1px #f1f1f1 solid; padding-bottom: 10px">Biography</h3>
+        <br>
+        <p>Username: <%= user.login %></p>
+        <p>GitHub: <a href="<%= user.html_url %>"><%= user.html_url %></a></p>
+        <br>
+        <button id="info" type="button" class="btn btn-light">
+            <a href="<%= user.url %>">More info</a>
+        </button>
+        <button id="home" type="button" class="btn btn-dark">
+            <a href="/users">Home Page</a>
+        </button>
+    </span>
+    <span class="photo">
+        <img src="<%= user.avatar_url %>" width="200px" alt="">
+    </span>
+</div>
+
+<%- include("partials/footer") %>
